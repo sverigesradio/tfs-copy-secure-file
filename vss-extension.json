@@ -13,11 +13,25 @@
   "icons": {
     "default": "extension-icon.png"
   },
-  "files": [
-    {
-      "path": "overview.md",
-      "addressable": true
+  "public": true,
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "links": {
+    "repository": {
+      "uri": "https://github.com/sverigesradio/tfs-copy-secure-file"
     },
+    "issues": {
+      "uri": "https://github.com/sverigesradio/tfs-copy-secure-file/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/sverigesradio/tfs-copy-secure-file"
+  },
+  "files": [
     {
       "path": "index.js",
       "addressable": true
