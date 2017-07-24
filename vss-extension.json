@@ -1,0 +1,47 @@
+{
+  "manifestVersion": 1,
+  "id": "securefiles-to-builddir",
+  "version": "1.0.0",
+  "name": "SecureFile to BuildDir",
+  "publisher": "PlayX",
+  "description": "Copies files from SecureFiles to BuildDir",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "overview.md",
+      "addressable": true
+    },
+    {
+      "path": "index.js",
+      "addressable": true
+    },
+    {
+      "path": "securefiles-to-builddir.js",
+      "addressable": true
+    },
+    {
+      "path": "task.json",
+      "addressable": true,
+      "packagePath": "/buildtask/task.json"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "custom-build-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "buildtask"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "id": "036b2893-18f0-43f3-afd1-1803f0ac5313",
+    "name": "SecureFilesToBuildDir",
+    "friendlyName": "SecureFile to BuildDir",
+    "description": "Copy from secure files to build directory",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Sveriges Radio",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Copy secure file",
+    "inputs": [
+        {
+            "name": "secureFile",
+            "type": "secureFile",
+            "label": "Secure file",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Secure file to copy"
+        },
+        {
+            "name": "additionalPath",
+            "type": "string",
+            "label": "Additional path",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Add this to the path (build dir + additional path + secure file = complete path)"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}

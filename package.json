@@ -1,0 +1,19 @@
+{
+  "name": "securefiles-to-builddir",
+  "version": "1.0.0",
+  "description": "Copy file from secure files library to build directory",
+  "main": "index.js",
+  "dependencies": {
+    "@types/es6-promise": "0.0.32",
+    "vso-node-api": "^6.2.5-preview",
+    "vsts-task-lib": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.8",
+    "@types/q": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sveriges Radio"
+}
